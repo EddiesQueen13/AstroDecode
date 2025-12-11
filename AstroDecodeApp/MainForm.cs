@@ -42,9 +42,11 @@ namespace AstroDecodeApp
             this.Controls.Add(responseLabel);
         }
 
-       private void AskButton_Click(object sender, EventArgs e)
-{
-    string question = inputBox.Text;
-    string answer = AstrologyEngine.GetResponse(question);
-    responseLabel.Text = "You asked: " + question + "\n\n" + answer;
+        private void AskButton_Click(object sender, EventArgs e)
+        {
+            string question = inputBox.Text;
+            string answer = AstrologyEngine.GetResponse(question);
+            responseLabel.Text = "You asked: " + question + "\n\n" + answer;
+        }
+    }
 }
